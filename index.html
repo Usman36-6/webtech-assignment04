@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown Slides</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="editorScreen">
+    <div class="topbar">
+      <button id="newBtn">New</button>
+      <button id="saveBtn">Save (Ctrl+S)</button>
+      <button id="presentBtn">Present</button>
+      <span id="msg"></span>
+    </div>
+
+    <div class="split">
+      <textarea id="editor"></textarea>
+
+      <div class="viewer" id="previewBox">
+        <div class="slide" id="previewSlide"></div>
+        <div class="controls">
+          <button id="leftBtn1">Left</button>
+          <span id="count1"></span>
+          <button id="rightBtn1">Right</button>
+          <button id="fullBtn1">Full Screen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="presentScreen" class="viewer hidden">
+    <div class="slide big" id="presentSlide"></div>
+    <div class="controls">
+      <button id="leftBtn2">Left</button>
+      <span id="count2"></span>
+      <button id="rightBtn2">Right</button>
+      <button id="fullBtn2">Full Screen</button>
+      <button id="backBtn">Back</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
